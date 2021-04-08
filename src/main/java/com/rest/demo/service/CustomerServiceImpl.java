@@ -3,10 +3,12 @@ package com.rest.demo.service;
 import com.rest.demo.dao.CustomerDAO;
 import com.rest.demo.model.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.List;
 
+@Service
 public class CustomerServiceImpl implements CustomerService{
 
     private CustomerDAO customerDAO;
